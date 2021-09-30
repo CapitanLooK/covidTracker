@@ -1,0 +1,78 @@
+.app-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.app-header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    h1{
+        text-transform: uppercase;
+    }
+}
+
+.app-left{
+    flex: 0.9;
+}
+
+.app-right{
+    text-align: center;
+}
+
+@media (max-width: 990px) {
+    .app-container{
+        flex-direction: column;
+    }
+}
+
+//status
+
+
+
+.status{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+
+    .status-box{
+        border-radius: 0.5rem;
+        padding: 2rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        
+        .status-title{
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .status-cases{
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .status-total{
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+}
+
+//live cases
+.live-container{
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+
+    margin-left: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    h1{
+        padding-top: 2rem;
+        text-transform: capitalize
+    }
+    h2{
+        text-transform: capitalize;
+    }
+}
